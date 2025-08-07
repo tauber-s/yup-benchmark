@@ -1,4 +1,4 @@
-import joi from 'joi'
+import joi from 'joi';
 
 export const simpleSchema = joi.object().keys({
   userId: joi.string().guid(),
@@ -7,7 +7,7 @@ export const simpleSchema = joi.object().keys({
   name: joi.string(),
   email: joi.string().email(),
   createdOn: joi.date(),
-}).required()
+}).required();
 
 export const completeSchema = joi.object().keys({
   userId: joi.string().guid(),
@@ -16,4 +16,4 @@ export const completeSchema = joi.object().keys({
   name: joi.string().required(),
   email: joi.string().email().required(),
   createdOn: joi.date(),
-}).required()
+}).required();

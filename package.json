@@ -1,5 +1,11 @@
 {
   "type": "module",
+  "scripts": {
+    "benchmark:single:simple": "node src/benchmark-single-simple.js",
+    "benchmark:single:complete": "node src/benchmark-single-complete.js",
+    "benchmark:many:simple": "node src/benchmark-many-simple.js",
+    "benchmark:many:complete": "node src/benchmark-many-complete.js"
+  },
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
     "cronometro": "^5.3.0",
